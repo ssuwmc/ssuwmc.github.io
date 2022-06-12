@@ -103,23 +103,18 @@
 				<div class="content">
 					<header>
 						<h2>우리 합창해요!</h2>
-						<p>
-							<a href="https://forms.gle/drzbphadnstQ3cyL6">
-								합창하러 가기
-							</a>
-						</p>
 					</header>
-					<!-- 밑의 폼은 애니메이션 용도로 총무 번호를 나타내며 활용하는 편이 이 정적페이지에 어울린다.-->
 					<div class="box">
-						<form method="post" action="#">
+						<form class="gform" action="https://script.google.com/macros/s/AKfycbw_FaBPfPRjtjJ-MJvZOM-xwYjmjbObhsV-ewGO/exec"  method="post">
 							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="총무 이름" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="총무 번호" /></div>
-								<div class="field"><textarea name="message" placeholder="문의사항은 위의 번호로 연락주세요!" rows="6"></textarea></div>
+								<div class="field half"><input type="text" name="name" placeholder="이름" required /></div>
+								<div class="field half"><input type="text" name="univ_number" placeholder="학번" required /></div>
+								<div class="field"><textarea name="message" placeholder="자기 소개를 해주세요!" rows="6" required ></textarea></div>
 							</div>
 							<ul class="actions special">
 								<li><input type="submit" value="Send Message" /></li>
 							</ul>
+							<span style="display:none" class="thankyou_message">연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀</span>
 						</form>
 					</div>
 				</div>
@@ -159,6 +154,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/submit.js"></script>
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>
