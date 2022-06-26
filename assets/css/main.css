@@ -971,6 +971,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: 260px;
 		}
 
 		.image.featured {
